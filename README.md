@@ -5,6 +5,33 @@ This project is built as part of the **Full-Stack Developer Intern Assignment** 
 The goal is to create a **Portfolio Analytics Dashboard** that provides investors with a detailed and interactive view of their investment portfolio.
 
 ---
+## 🛠️ Setup Instructions
+
+### Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
+- (Optional) **Prisma** if you are using a database
+
+---
+
+### 1. Clone the repository
+```bash 
+git clone https://github.com/yourusername/wealthmanager-dashboard.git
+cd wealthmanager-dashboard
+npm install
+npm run dev
+```
+
+
+ ### Database Setup with Prisma(Optional) 
+ Create a .env file in the root directory and add:
+DATABASE_URL="file:./dev.db"
+ ```bash
+npm run db:push       # Push schema changes to the database
+npm run db:generate   # Generate the Prisma client
+npm run db:migrate    # Create and run migrations
+```
 
 ### 📌 Backend Requirements
 
