@@ -96,4 +96,3 @@ An **interactive portfolio dashboard** with the following sections:
    - Portfolio data displayed correctly  
    - All charts functional  
    - Responsive and interactive UI  
-   - Error handling demonstrated
