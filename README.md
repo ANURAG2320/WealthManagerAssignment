@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 📄 Documentation
 
-## Getting Started
+### Assignment Overview
+This project is built as part of the **Full-Stack Developer Intern Assignment** for **WealthManager.online**.  
+The goal is to create a **Portfolio Analytics Dashboard** that provides investors with a detailed and interactive view of their investment portfolio.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📌 Backend Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A **Portfolio Data Service API** with 4 core endpoints:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **GET `/api/portfolio/holdings`**  
+   Returns the complete list of user's stock investments with calculated:
+   - Current value  
+   - Absolute gain/loss  
+   - Gain/loss percentage  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **GET `/api/portfolio/allocation`**  
+   Returns asset allocation by:
+   - **Sector** (e.g., Technology, Energy, Banking, etc.)  
+   - **Market Cap** (Large, Mid, Small)
 
-## Learn More
+3. **GET `/api/portfolio/performance`**  
+   Returns:
+   - Historical performance vs benchmarks (Nifty 50, Gold)  
+   - Returns for 1 month, 3 months, and 1 year
 
-To learn more about Next.js, take a look at the following resources:
+4. **GET `/api/portfolio/summary`**  
+   Returns key portfolio metrics:
+   - Total value, invested amount, total gain/loss  
+   - Top and worst performers  
+   - Diversification score and risk level
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Additional Backend Requirements:**
+- Data calculations (gain/loss, percentages)  
+- Error handling with proper HTTP status codes  
+- Validation for edge cases and invalid requests  
+- Clean, well-commented code
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 📌 Frontend Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+An **interactive portfolio dashboard** with the following sections:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Portfolio Overview Cards**  
+   - Total value, gain/loss, % performance, number of holdings
+
+2. **Asset Allocation Visualizations**  
+   - Sector breakdown (pie/donut chart)  
+   - Market cap distribution (bar/pie chart)  
+   - Hover effects for exact values and percentages
+
+3. **Holdings Table/Grid**  
+   - Sortable, searchable  
+   - Color-coded for gains/losses  
+   - Fully responsive
+
+4. **Performance Comparison Chart**  
+   - Timeline chart for portfolio vs Nifty 50 vs Gold  
+   - Hover to view exact values  
+   - Shows return percentages
+
+5. **Top Performers Section**  
+   - Highlight best and worst performing stocks  
+   - Show diversification score and risk level
+
+**Additional Frontend Requirements:**
+- Responsive design for mobile  
+- Interactive elements and hover effects  
+- Loading states and user-friendly error handling
+
+---
+
+### 📌 Technical Freedom
+- Any technology stack may be used  
+- AI tools are encouraged to speed up development  
+- Documentation should specify:
+  - AI tools used and how  
+  - Which code was AI-generated vs hand-written  
+  - How AI helped solve specific challenges
+
+---
+
+### 📌 Deliverables
+1. **Complete Working Application**
+   - Live backend API  
+   - Live frontend dashboard  
+   - Organized GitHub repository
+
+2. **Documentation**
+   - Comprehensive README (this file)
+
+3. **Working Demo**
+   - Portfolio data displayed correctly  
+   - All charts functional  
+   - Responsive and interactive UI  
+   - Error handling demonstrated
