@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/portfolio/summary/route": "app/api/portfolio/summary/route.js",
+  "/api/portfolio/allocation/route": "app/api/portfolio/allocation/route.js",
+  "/api/portfolio/holdings/route": "app/api/portfolio/holdings/route.js",
+  "/api/portfolio/performance/route": "app/api/portfolio/performance/route.js"
+}

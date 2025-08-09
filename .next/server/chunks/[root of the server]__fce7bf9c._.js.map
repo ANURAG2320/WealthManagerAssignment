@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 60, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/ASUS/OneDrive/Desktop/portfolio-analytics-dashboard/src/app/api/portfolio/summary/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\n\r\n\r\nconst summaryData = {\r\n  \"totalValue\": 2215711.25,\r\n  \"totalInvested\": 1900000,\r\n  \"totalGainLoss\": 315711.25,\r\n  \"totalGainLossPercent\": 16.67,\r\n  \"topPerformer\": {\r\n    \"symbol\": \"BAJFINANCE\",\r\n    \"name\": \"Bajaj Finance Ltd\",\r\n    \"gainPercent\": 28.5\r\n  },\r\n  \"worstPerformer\": {\r\n    \"symbol\": \"HDFC\",\r\n    \"name\": \"HDFC Bank Ltd\",\r\n    \"gainPercent\": -2.1\r\n  },\r\n  \"diversificationScore\": 8.2,\r\n  \"riskLevel\": \"Moderate\"\r\n};\r\n\r\nexport async function GET() {\r\n  try {\r\n    return NextResponse.json(summaryData);\r\n  } catch (error) {\r\n    return NextResponse.json(\r\n      { error: \"Failed to fetch portfolio summary\" },\r\n      { status: 500 }\r\n    );\r\n  }\r\n}"],"names":[],"mappings":";;;AAAA;;AAGA,MAAM,cAAc;IAClB,cAAc;IACd,iBAAiB;IACjB,iBAAiB;IACjB,wBAAwB;IACxB,gBAAgB;QACd,UAAU;QACV,QAAQ;QACR,eAAe;IACjB;IACA,kBAAkB;QAChB,UAAU;QACV,QAAQ;QACR,eAAe,CAAC;IAClB;IACA,wBAAwB;IACxB,aAAa;AACf;AAEO,eAAe;IACpB,IAAI;QACF,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC3B,EAAE,OAAO,OAAO;QACd,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CACtB;YAAE,OAAO;QAAoC,GAC7C;YAAE,QAAQ;QAAI;IAElB;AACF","debugId":null}},
+    {"offset": {"line": 94, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
